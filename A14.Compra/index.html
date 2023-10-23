@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Ejercicio PROMPT</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="css/normalize.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+		
+		<link rel="shortcut icon" href="img/favii.png" />
+		<script type="text/javascript" src="js/javascript.js"> </script>
+
+
+	</head>
+	<body>
+	
+		<div id="primeraParte">
+					<!-- Tabla anidada de 1x4 -->
+					<table >
+						<tr>
+							<td>Miguel de cervantes</td>
+							<td id="texto">El quijote</td>
+							<td id="importe">22€</td>
+							<td><input type="button" value="añadir" onclick="enviar1('El quijote', 22, 'ivaSuperreducido')"></td>
+						</tr>
+					
+						<tr>
+							<td>Pantalones vaqueros</td>
+							<td>levis</td>
+							<td>62€</td>
+							<td><input type="button" value="añadir" onclick="enviar1('Pantalones Levis', 62, 'ivaNormal')"></td>
+						</tr>
+					
+					
+						<tr>
+							<td>Fabada</td>
+							<td>litoral</td>
+							<td>2,50 €</td>
+							<td><input type="button" value="añadir" onclick="enviar1('Fabada litoral', 2.05, 'ivaReducido')"></td>
+						</tr>
+				
+					
+						<tr>
+							<td>J.R.Tolkien</td>
+							<td>El señor de los anillos</td>
+							<td>18 €</td>
+							<td><input type="button" value="añadir" onclick="enviar1('El señor de los anillos', 18, 'ivaSuperreducido')"></td>
+						</tr>
+
+
+						<tr>
+							<td>Vestido</td>
+							<td>Desigual</td>
+							<td>48 €</td>
+							<td><input type="button" value="añadir" onclick="enviar1('Vestido Desigual', 48, 'ivaNormal')"></td>
+						</tr>
+
+						<tr>
+							<td>Fruta envasada</td>
+							<td>1 kg peras</td>
+							<td>2,22 €</td>
+							<td><input type="button" value="añadir" onclick="enviar1('Fruta envasada', 2.22, 'ivaReducido')"></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><input type="button" value="Calcular Total" onclick="calcularTotal()"></td>
+						</tr>
+
+					</table>
+					<hr/> <!-- linea de separacion-->
+
+
+
+
+				</div>
+				<div id="segundaParte">
+						<h2>mi cesta</h2>
+					<table  id="tablaCesta">
+						<tr>
+							<th>Producto</th>
+							<th>Precio sin IVA</th>
+							<th>Tipo IVA</th>
+							<th>IVA</th>
+							<th>Importe</th>
+						</tr>
+						<tbody id="bodyCesta">
+						</tbody>
+
+						<tbody id="bodyGastosEnvio">
+						</tbody>
+
+						<tbody id="bodyCestaSumaTotal">
+						</tbody>
+					</table>
+				</div>
+
+				
+
+
+	</body>
+</html>
