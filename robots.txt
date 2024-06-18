@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /PHPMailer/
+Disallow: /img/
+Disallow: /pdf/
+Disallow: /enviar.php
+
+Sitemap: http:/localhost/PortfolioSheila-404/sitemap.xml
+Sitemap: https://smiguel.segundodaw.com/Error/sitemap.xml
